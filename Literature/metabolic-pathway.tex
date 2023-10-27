@@ -1,10 +1,67 @@
-\documentclass[12pt][article]
-\usepackage{amsfont}
-\usepackage{amssymb}
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsfonts}
+\usepackage{amsmath, amssymb}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{geometry}
+\usepackage{relsize}
+\usepackage{wrapfig}
+\usepackage{graphicx}      % konfigurasi gambar
+\usepackage{tcolorbox}
 \usepackage{tikz}
+\usepackage{hhline}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{actuarialsymbol}
+\usepackage{pgfplots}
+\usepackage{caption, tabularx, multicol, multirow} 
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Literature Review},
+	pdfpagemode=FullScreen,
+}
+
+\urlstyle{same}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=15mm,
+	top=20mm,
+	right=15mm,
+	bottom=15mm,
+}
+
+% header, footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{Leonardo Kosasih}
+\fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
 \title{Metabolic Pathway}
 \date{\today}
 \begin{document}
 \maketitle
-Leon is a very kind and handsome person.
+This documents will rewrite some equation and some problems of \textbf{metabolic flux map}. I have no idea about the chemistry nor biology basic, but I do know about how to optimize a linear system. The set up of the model is shown below
+\begin{align*}
+	& \max{\mu} \numberthis \\
+	& \text{s.t.} \\
+	& \mathbf{S} \cdot \mathbf{v} = 0
+\end{align*}
+with:
 \end{document}
